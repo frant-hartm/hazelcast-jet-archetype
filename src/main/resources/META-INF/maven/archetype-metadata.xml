@@ -1,0 +1,30 @@
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
+            http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="hazelcast-jet-archetype-simple">
+
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>org.example</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="artifactId">
+            <defaultValue>jet-job</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="version">
+            <defaultValue>1.0-SNAPSHOT</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="jetVersion">
+            <defaultValue>4.0</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+        </fileSet>
+        <fileSet>
+            <directory>src/test/java</directory>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>
+
