@@ -16,7 +16,7 @@ public class JetJob {
          .setName("filter out odd numbers")
          .writeTo(Sinks.logger());
 
-        JetInstance jet = Jet.newJetInstance();
+        JetInstance jet = Jet.bootstrappedInstance();
         jet.newJob(p).join();
     }
 
